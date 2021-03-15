@@ -84,6 +84,7 @@ func NewFileLogger(config map[string]string) (log LogInterface, err error) {
 		lastSplitHour: time.Now().Hour(),
 	}
 
+	log.Init()
 	return
 }
 
